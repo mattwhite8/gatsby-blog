@@ -12,8 +12,12 @@
   },
   "dependencies": {
     "gatsby": "^2.0.76",
+    "gatsby-plugin-typography": "^2.2.5",
     "react": "^16.5.1",
-    "react-dom": "^16.5.1"
+    "react-dom": "^16.5.1",
+    "react-typography": "^0.16.18",
+    "typography": "^0.16.18",
+    "typography-theme-funston": "^0.16.18"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
