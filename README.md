@@ -1,0 +1,1 @@
+# A barebones structure for a gatsby site, as I learn this will transition into a blog
