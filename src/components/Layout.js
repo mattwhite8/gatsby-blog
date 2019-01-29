@@ -1,11 +1,15 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Hero from './Hero'
 import './style.scss'
 
 const Layout = ({ children }) => (
-    <div className="has-background-primary">
+    <div>
         <Navbar />
-        {children}
+        <Hero />
+        <section className="container">
+            {children}
+        </section>
     </div>
 )
 
