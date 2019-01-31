@@ -1,8 +1,10 @@
 import React from 'react'
+import Nav from './Navbar'
 import heroImg from '../img/alone.jpg'
 
 export default () => (
-    <section className="hero is-fullheight-with-navbar" style={{background: `black url(${heroImg}) center / cover`}}>
+    <header className="hero is-fullheight" style={{background: `linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(219,219,219,1) 100%), url(${heroImg}) center / cover`}}>
+        <Nav />
         <div className="hero-body">
             <div className="container has-text-centered">
                 <h1 className="title has-text-white is-size-1">
@@ -10,5 +12,5 @@ export default () => (
                 </h1>
             </div>
         </div>
-    </section>
+    </header>
 )
