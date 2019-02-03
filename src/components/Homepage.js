@@ -4,12 +4,10 @@ import About from './About'
 import Footer from './Footer'
 import './style.scss'
 
-const Layout = ({ children }) => (
+export default () => (
     <div>
         <Hero />
         <About />
         <Footer />
     </div>
 )
-
-export default Layout
