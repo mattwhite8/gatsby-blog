@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 export default () => (
     <nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
@@ -11,13 +12,8 @@ export default () => (
 
         <div id="burger" className="navbar-menu">
             <div className="navbar-start">
-                <a className="navbar-item">
-                    Home
-                </a>
-
-                <a className="navbar-item">
-                    About
-                </a>
+                <Link to="/" className="navbar-item">Home</Link>
+                <Link to="/posts" className="navbar-item">Posts</Link>
             </div>
         </div>
     </nav>
