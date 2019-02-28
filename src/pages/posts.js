@@ -19,9 +19,7 @@ export default ({ data }) => {
                                     <div className="card-image">
                                         <div className="hero is-info is-bold">
                                             <div className="hero-body">
-                                                <div className="container">
-                                                    <h1 className="title">{node.frontmatter.title}</h1>
-                                                </div>
+                                                <h1 className="title">{node.frontmatter.title}</h1>
                                             </div>
                                         </div>
                                     </div>
