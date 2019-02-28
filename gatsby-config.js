@@ -22,7 +22,12 @@ module.exports = {
           path: `${__dirname}/src/img/`,
         },
       },
-      `gatsby-transformer-remark`,
+      {
+        resolve: `gatsby-transformer-remark`,
+        options: {
+          plugins: [`gatsby-remark-responsive-iframe`],
+        },
+      },
       `gatsby-plugin-sharp`,
       `gatsby-transformer-sharp`,
       {
