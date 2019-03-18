@@ -1,6 +1,7 @@
 import React from 'react'
 import Page from '../components/IndexPage'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { css } from '@emotion/core'
 
 export default ({ data }) => {
@@ -27,7 +28,7 @@ export default ({ data }) => {
                                         <div className="content">{node.excerpt}</div>
                                     </div>
                                     <footer className="card-footer">
-                                        <Link to={node.fields.slug} className="card-footer-item">Read</Link>
+                                        <AniLink fade to={node.fields.slug} duration={.5} className="card-footer-item">Read</AniLink>
                                     </footer>
                                 </div>
                             </div>

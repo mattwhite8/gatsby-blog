@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const toggle = () => {
     const menu = document.getElementById('burger')
@@ -22,8 +22,8 @@ export default () => (
 
         <div id="burger" className="navbar-menu">
             <div className="navbar-start">
-                <Link to="/" className="navbar-item">Home</Link>
-                <Link to="/posts" className="navbar-item">Posts</Link>
+                <AniLink fade to="/"  duration={.5} className="navbar-item">Home</AniLink>
+                <AniLink fade to="/posts"  duration={.5} className="navbar-item">Posts</AniLink>
             </div>
         </div>
     </nav>
