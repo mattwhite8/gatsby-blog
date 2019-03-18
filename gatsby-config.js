@@ -3,6 +3,12 @@ module.exports = {
       `gatsby-plugin-sass`,
       `gatsby-plugin-emotion`,
       {
+        resolve: `gatsby-plugin-page-transitions`,
+        options: {
+          transitionTime: 800
+        }
+      },
+      {
         resolve: `gatsby-plugin-typography`,
         options: {
           pathToConfigModule: `src/utils/typography`,
